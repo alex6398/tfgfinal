@@ -1,0 +1,78 @@
+html {
+  height: 100%; /*altura de 100*/
+  box-sizing: border-box /* tamaño de la caja heredado*/ 
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit; /* tamaño de la caja heredado*/
+}
+body {
+  position: relative; /*position relativa*/
+  margin: 0; /*margen 0*/
+  padding-bottom: 400px; /* rellno en el pie de 400px*/
+  min-height: 100%; /*altura minima de 100%*/
+    /*font-family: "Times New Roman", Times, serif;  fuente a usar */
+}
+@media only screen and (max-width: 767px) /* para moviles de ancho maximo 767px*/
+{
+body {
+  position: relative; /*position relativa*/
+  margin: 0; /* margen 0*/
+  padding-bottom: 600px; /*relleno en el pie de 600px*/
+  min-height: 100%;
+    /*font-family: "Times New Roman", Times, serif;  fuente a usar */
+}
+}
+
+
+footer {
+    position: absolute; /*position absoluta*/
+    right: 0; /*derecha 0*/
+    bottom: 0; /*pie 0*/
+    left: 0; /* izquierda 0*/
+    padding: 1rem; /*son 16px*/
+    background-color: #d94575;
+    text-align: center; /*texto alineado en el centro*/
+    color: #fff; /*color blanco*/
+}
+
+#contenido_cabecera {
+    /*se marca !important por si el css del bootstrap interfiere y estos datos sean primarios*/
+     background-color: #121212 !important;  /* color de fondo que se utiliza en el header */
+ }
+
+
+ #contenido {
+     /*se marca !important por si el css del bootstrap interfiere y estos datos sean primarios*/
+     max-width: 990px !important; /*ancho donde ira todo el contenido fuera del header,navbar y del footer*/
+     margin-left: auto !important; /*margen izquierdo auto y margen derecho auto para centrar el contenido*/
+     margin-right: auto !important;
+     margin-top: 20px !important; /* margen arriba de 20 px para separar el nabvar del contenido*/
+     margin-bottom: 20px !important; /* margen abajo de 20 px para separar el contenido del footer*/
+     background-color: white !important; /*el color de fondo será blanco*/
+
+ }
+
+ nav {
+     /*se marca !important por si el css del bootstrap interfiere y estos datos sean primarios*/
+     max-width: 990px !important; /*ancho donde ira todo el contenido navbar */
+     margin-left: auto !important; /*margen izquierdo auto y margen derecho auto para centrar el contenido del navbar*/
+     margin-right: auto !important;
+
+ }
+
+.altura_texto {
+    /* se añade un 48 de altura extra paara que las cards tengan la misma altura por si el nombre ocupa dos filas y no se descuadre una card de otra*/
+    height: 48px !important;
+}
+
+.justificar{ 
+    text-align: justify !important; /*justificar texto*/
+}
+
+
+
+
+
+
